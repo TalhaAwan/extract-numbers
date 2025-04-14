@@ -1,5 +1,7 @@
 .pytest_cache/
 env/
-extract_numbers.egg-info/
+build/
+dist/
+*.egg-info/
 **/__pycache__/
 *.pyc
