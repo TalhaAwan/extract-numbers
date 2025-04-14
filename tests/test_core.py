@@ -8,7 +8,7 @@ def test_extract_numbers():
 
 def test_extract_numbers_commas():
     extractor = ExtractNumbers()       
-    assert extractor.extractNumbers("100,000 results found") == ["100,000"]        
+    assert extractor.extractNumbers("100,000 results found out of 100,000,000") == ["100,000", "100,000,000"]        
     assert extractor.extractNumbers("100,000,000,000 is a large amount, and so is 900,000,000,000,000") == ["100,000,000,000", "900,000,000,000,000"]
 
 def test_extract_standardized_numbers_with_commas():
