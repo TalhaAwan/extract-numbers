@@ -1,10 +1,10 @@
-# extract-numbers ![extract-numbers](https://github.com/your-username/extract-numbers/actions/workflows/build.yml/badge.svg)
+# extract-numbers ![extract-numbers](https://github.com/talhaawan/extract-numbers/actions/workflows/build.yml/badge.svg)
 
 > Extract numbers from strings, with support for commas, decimals, negatives, and European formats.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install extract-numbers
@@ -136,7 +136,7 @@ ExtractNumbers({ 'european_format': True, 'remove_commas': True }).extractNumber
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
