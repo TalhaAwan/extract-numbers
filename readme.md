@@ -1,6 +1,6 @@
 # extract-numbers ![extract-numbers](https://github.com/talhaawan/extract-numbers/actions/workflows/build.yml/badge.svg)
 
-> Extract numbers from strings, with support for commas, decimals, negatives, and European formats.
+> Extract numbers from strings, with support for commas, decimals, negatives, and the European format.
 
 ---
 
@@ -28,6 +28,16 @@ extractor.extractNumbers(text)
 # => ['100,000']
 
 ```
+
+## API
+
+### ExtractNumbers(options: dict = None)
+
+Create a new extractor instance with optional config.
+
+### .extractNumbers(text: str) -> List[str | int | float]
+
+Extracts all valid numbers from the given string, based on the configured options.
 
 ## Examples
 
@@ -67,16 +77,6 @@ extractor.extractNumbers("Your balance: $100,000.77, previous: $90,899.89")
 # => ['100,000.77', '90,899.89']
 
 ```
-
-## API
-
-### ExtractNumbers(options: dict = None)
-
-Create a new extractor instance with optional config.
-
-### .extractNumbers(text: str) -> List[str | int | float]
-
-Extracts all valid numbers from the given string, based on the configured options.
 
 ---
 
