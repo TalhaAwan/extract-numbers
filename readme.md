@@ -1,4 +1,9 @@
-# extract-numbers ![extract-numbers](https://github.com/talhaawan/extract-numbers/actions/workflows/build.yml/badge.svg)
+# extract-numbers
+
+![Build Status](https://github.com/talhaawan/extract-numbers/actions/workflows/build.yml/badge.svg)
+![PyPI Downloads](https://img.shields.io/pypi/dm/extract-numbers)
+![PyPI Version](https://img.shields.io/pypi/v/extract-numbers)
+![License](https://img.shields.io/pypi/l/extract-numbers)
 
 > Extract numbers from strings, with support for commas, decimals, negatives, and the European format.
 
