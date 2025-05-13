@@ -1,9 +1,12 @@
 # extract-numbers
 
-![Build Status](https://github.com/talhaawan/extract-numbers/actions/workflows/build.yml/badge.svg)
-![PyPI Downloads](https://img.shields.io/pypi/dm/extract-numbers)
-![PyPI Version](https://img.shields.io/pypi/v/extract-numbers)
-![License](https://img.shields.io/pypi/l/extract-numbers)
+[![PyPI version](https://img.shields.io/pypi/v/extract-numbers)](https://pypi.org/project/extract-numbers/)
+[![CI](https://github.com/TalhaAwan/extract-numbers/actions/workflows/ci.yml/badge.svg)](https://github.com/TalhaAwan/extract-numbers/actions/workflows/ci.yml)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/extract-numbers)](https://pypi.org/project/extract-numbers/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![mypy](https://img.shields.io/badge/types-mypy-blue?logoColor=white)](http://mypy-lang.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/TalhaAwan/extract-numbers/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/extract-numbers)](https://pypi.org/project/extract-numbers/)
 
 > Extract numbers from strings, with support for commas, decimals, negatives, and the European format.
 
@@ -13,12 +16,6 @@
 
 ```bash
 pip install extract-numbers
-```
-
-Or if you're installing from source:
-
-```bash
-pip install -e .
 ```
 
 ## Usage
@@ -40,7 +37,7 @@ extractor.extractNumbers(text)
 
 Create a new extractor instance with optional config.
 
-### .extractNumbers(text: str) -> List[str | int | float]
+### .extractNumbers(text: str) -> List[Union[str, int, float]]
 
 Extracts all valid numbers from the given string, based on the configured options.
 
