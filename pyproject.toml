@@ -58,7 +58,7 @@ quote-style = "double"
 select = ["E", "F", "I"]
 
 [tool.setuptools]
-packages = ["extract_numbers"]
+packages = { find = {} }
 
 [tool.setuptools.package-data]
 "extract_numbers" = ["py.typed"]

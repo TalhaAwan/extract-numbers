@@ -37,7 +37,7 @@ extractor.extractNumbers(text)
 
 Create a new extractor instance with optional config.
 
-### .extractNumbers(text: str) -> List[str | int | float]
+### .extractNumbers(text: str) -> List[Union[str, int, float]]
 
 Extracts all valid numbers from the given string, based on the configured options.
 
