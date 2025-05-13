@@ -1,3 +1,5 @@
+.PHONY: build check-dist publish validate test typecheck format check-format
+
 SRC = extract_numbers tests
 
 test:
