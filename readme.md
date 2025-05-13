@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/TalhaAwan/extract-numbers/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/pypi/dm/extract-numbers)](https://pypi.org/project/extract-numbers/)
 
-> Extract numbers from strings, with support for commas, decimals, negatives, and the European format.
+Extract numbers from strings, with support for commas, decimals, negatives, and the European format.
 
 ---
 
@@ -161,6 +161,12 @@ To run tests:
 ```bash
 pytest
 ```
+
+---
+
+## Other Packages
+
+- [randomcoords](https://pypi.org/project/randomcoords/) – The Python client for the [RandomCoords](https://www.randomcoords.com) API to fetch random geographic coordinates worldwide.
 
 ## License
 
