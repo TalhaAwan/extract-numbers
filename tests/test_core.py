@@ -207,11 +207,11 @@ def test_extract_numbers_invalid_text_argument() -> None:
     with pytest.raises(
         ValueError, match=r"Invalid argument: Expected 'text' to be of type str, but got int."
     ):
-        extractor.extractNumbers(12345) # type: ignore[arg-type]
+        extractor.extractNumbers(12345)  # type: ignore[arg-type]
     with pytest.raises(
         ValueError, match=r"Invalid argument: Expected 'text' to be of type str, but got dict."
     ):
-        extractor.extractNumbers(dict({"a": 1})) # type: ignore[arg-type]
+        extractor.extractNumbers(dict({"a": 1}))  # type: ignore[arg-type]
 
 
 def test_extract_numbers_invalid_additional_option() -> None:
@@ -219,19 +219,19 @@ def test_extract_numbers_invalid_additional_option() -> None:
         ValueError,
         match=r"Invalid option 'additional'\. Expected one of \['as_string', 'remove_commas', 'european_format'\]\.",
     ):
-        ExtractNumbers({"additional": True}) # type: ignore[arg-type]
+        ExtractNumbers({"additional": True})  # type: ignore[arg-type]
 
 
 def test_extract_numbers_invalid_as_string() -> None:
     with pytest.raises(TypeError, match="Option 'as_string' must be a boolean."):
-        ExtractNumbers({"as_string": 27}) # type: ignore[typeddict-item]
+        ExtractNumbers({"as_string": 27})  # type: ignore[typeddict-item]
 
 
 def test_extract_numbers_invalid_remove_commas() -> None:
     with pytest.raises(TypeError, match="Option 'remove_commas' must be a boolean."):
-        ExtractNumbers({"remove_commas": "yes"}) # type: ignore[typeddict-item]
+        ExtractNumbers({"remove_commas": "yes"})  # type: ignore[typeddict-item]
 
 
 def test_extract_numbers_invalid_european_format() -> None:
     with pytest.raises(TypeError, match="Option 'european_format' must be a boolean."):
-        ExtractNumbers({"european_format": "yes"}) # type: ignore[typeddict-item]
+        ExtractNumbers({"european_format": "yes"})  # type: ignore[typeddict-item]
