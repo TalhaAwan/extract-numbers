@@ -154,12 +154,24 @@ Ensure your changes are covered by tests.
 
 ---
 
-## Test Coverage
+## Setup for Local Development
 
-To run tests:
+Install dev dependencies:
 
 ```bash
-pytest
+pip install .[dev]
+```
+
+OR
+
+```bash
+pip install '.[dev]'
+```
+
+Run the full validation suite (formatting, type checking, and tests):
+
+```bash
+make validate
 ```
 
 ---
